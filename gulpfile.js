@@ -60,7 +60,7 @@ function build(){
 }
 
 function styles(){
-  return src('app/scss/style.scss')
+  return src('app/scss/**/*.scss')
       .pipe(sass({outputStyle: 'compressed'}))
       .pipe(concat('style.min.css'))
       .pipe(autoprefixer({

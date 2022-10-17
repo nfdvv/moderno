@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto-Regular', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #546e7a;
+  font-weight: 400;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: $text;
+}
+.container{
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
