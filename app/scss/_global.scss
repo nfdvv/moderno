@@ -2,6 +2,7 @@
 *::before,
 *::after{
   box-sizing: border-box;
+  margin: 0;
 }
 body{
   font-family: 'Roboto-Regular', sans-serif;
@@ -30,10 +31,21 @@ a{
   margin: 0px auto;
   padding: 0px 15px;
 }
-.search{
-  background-image: url(../images/search-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 533px;
+.container-fluid{
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 0px 30px;
+}
+@media (max-width: 720px){
+  .container-fluid{
+    padding: 0px 15px;
+  }
+}
+.title{
+  text-align: center;
+  color: $bg;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 60px;
+  margin-bottom: 30px;
 }
