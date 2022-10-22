@@ -69,14 +69,14 @@
   &-title{
     margin-bottom: 10px;
     font-size: 48px;
-    font-weight: 700;
+    @include f700;
     font-family: 'Roboto', sans-serif;
     line-height: 72px;
   }
   &-text{
     margin-bottom: 50px;
     font-size: 20px;
-    font-weight: 500;
+    @include f500;
     font-family: 'Roboto', sans-serif;
     line-height: 30px;
   }
@@ -93,7 +93,7 @@
       border: none;
       outline: 0;
       font-family: 'Roboto', sans-serif;
-      font-weight: 500;
+      @include f500;
       font-size: 14px;
       padding-left: 25px;
       padding-right: 60px;
@@ -161,7 +161,7 @@
     padding: 10px 30px;
     align-items: center;
     min-height: 90px;
-    font-weight: 500;
+    @include f500;
     border-bottom: 1px solid #e7ecf2;;
   }
   &-name{
@@ -169,7 +169,7 @@
   }
   &-title{
     color: $bg;
-    font-weight: 500;
+    @include f500;
     font-size: 18px;
     display: block;
   }
@@ -181,7 +181,7 @@
   &-price{
     font-size: 20px;
     color: $bg;
-    font-weight: 700;
+    @include f700;
   }
   &-info{
     display: flex;
@@ -206,7 +206,7 @@
     }
     span{
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
     }
   }
   &-star{
@@ -266,3 +266,60 @@
 
 
 // end product-slider
+// start advantages
+
+.advantages{
+  background-color: $bg;
+  padding: 110px 0;
+}
+.advantages__title{
+  color: #fff;
+}
+.advantages__inner{
+  display: flex;
+  justify-content: space-between;
+}
+.advantages__item{
+  max-width: 370px;
+  text-align: center;
+  padding: 0px 15px;
+  &:hover{
+    .advantages__item-images{
+      background-color: $green;
+      transition: all .3s;
+    }
+    .advantages__item-title{
+      color: $green;
+      transition: all .3s;
+    }
+    .advantages__item-images{
+      svg{
+        path{
+          fill: white;
+        }
+      }
+    }
+  }
+  &-images{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+  }
+  &-title{
+    color: #fff;
+    margin-bottom: 25px;
+    @include f500;
+    font-size: 24px;
+  }
+  &-text{
+    font-size: 15px;
+    color: #b0bec5;
+  }
+}
+
+// end advantages
